@@ -1,0 +1,79 @@
+
+<div id="divmayor" class="form-group" >
+           <h5>Indtroduzca sus datos:</h5>
+
+  <form class="container " [formGroup]="userForm"  (ngSubmit)="onSubmit2(userForm.value)" novalidate >
+  <div class="dvi1">
+    
+
+       <div class="dvi1 col-md-6 ">
+      <label id="idcolor" for="inputEmail4 form-label">URL o página web:</label>
+       <input type="url" class="form-control" name="url"  formControlName="url" >
+  
+      </div>
+  <div class="dvi1 col-md-6">
+      <label id="idcolor" for="inputPassword4">Indique la denomanacion o nombre de uso corriente o más común del sitio web:</label>
+    <input type="url" class="form-control"  name="url2" formControlName="url2"  >
+  </div>
+    <div class="checkboxdiv inRad form-group" >
+  <label id="idcolor" for="">El responsable del fichero de datos personales recogidos de usuarios es:</label>
+   <input name="checkbox" class="form-check-input inRadRound form-control" type="radio" id="gridCheck" value="Una persona fisica" formControlName="checkbox"  >  Una persona fisica  <br/> 
+      <input name="checkbox" class="form-check-input inRadRound form-control" type="radio" id="gridCheck2" value="Una persona jurídica (ej. sociedad, asociación)" formControlName="checkbox">Una persona jurídica (ej. sociedad, asociación)
+  </div>
+   <div class="form-group col-md-4 inRad">
+    <label id="idcolor" for="inputAddress" class="col col-md-4 inRad2">Nombre completo del responsable de datos personales recogidos de usuarios:</label>
+    <input type="text" name="nombre-completo" class="form-control col-md-4" id="inputAddress" placeholder="ej. Miguel Torre" formControlName="nombre">
+  </div>
+
+<div class="form-group col-md-4 inRad">
+    <label id="idcolor"  for="inputAddress2" >NIF (DNI o NIE) del responsable del fichero de datos personales recogidos de usuarios:</label>
+    <input type="text" class="form-control col-md-6" name="documento" id="inputAddress2" placeholder="Ej. Y56.." formControlName="documento">
+  </div>
+ <div class="form-group col-md-6 inRad">
+      <label id="idcolor" for="inputCity" text-left>Dirección completa de/los responsable(s) del fichero de datos personales recogidosde usuarios: </label>
+      <input type="text" name="address" class="form-control" id="inputCity" placeholder="Ej. C/.. Codigo postal.." formControlName="address">
+    </div>
+
+     <div  class="form-group col-md-6 inRad">
+      <label id="idcolor" placeholder="Ej. 934782457" for="numerotelefono">Número(s) de telefono del/los responsables(s) del fichero de datos personales recogidos de usuarios:</label>
+      <input type="number" name="tel" class="form-control" formControlName="tel" placeholder="Ej. 934782457">
+    </div>
+
+     <div id="idcolor"  class="form-group col-md-2 inRad">
+      <label for="inputZip">(Opcional) Número de fax del/los responsable(s) del fichero de datos personales recogidos de usuarios:</label>
+      <input type="number" name="fax" class="form-control" placeholder="Ej. 910000000" id="inputZip" formControlName="numfax" >
+    </div>
+
+   <div id="idcolor"  class="form-group col-md-2 inRad">
+      <label for="inputZip" id="idcolor">Correo electrónico de contacto del/los responsable(s) del fichero de datos personales recogidos de usuarios:</label>
+      <input type="email" name="email" class="form-control input" formControlName="email" placeholder="Ej. contacto@pixelpro.es"   >
+    </div>
+    
+<p class="parrafo">Rellenar todos los campos requeridos</p>
+
+  <button [disabled]="click" class="btn-warnig btn-primary" [disabled]="!userForm.valid" type="submit" (click)="onSubmit2(data)"   (click)="AddPost(post)"   >guardar datos</button>
+ </div>
+</form>
+
+
+<div>
+    <p class="p">
+       Los datos personales recogidos de usuarios son:
+únicamente datos identificativos (nombre, apellido, número de teléfono, correo electrónico, etc.) datos identificativos y datos personales sensibles o especialmente protegidos (ej. origen étnico o racial, opiniones políticas, convicciones religiosas o filosóficas, afiliación sindical, datos genéticos, datos biométricos, datos de salud)
+¿Durante cuánto tiempo serán conservados los datos personales recogidos de usuarios (en "meses", "años", etc.)?
+Ej. 18 meses
+Los datos personales recogidos de usuarios:
+serán compartidos con otras personas o empresas (ej. Google, Google Analytics, empresa que realiza el servicio de hosting) no serán compartidos con otras personas o empresas
+Nombre completo o denominación social y domicilio completo de la(s) persona(s) o empresa(s) con las que serán compartidos los datos personales recogidos de usuarios:
+Ej. Pixelpro Data, S.L. con domicilio en Calle Oro 20, Colmenar Viejo, Madrid.
+Marque la casilla si el sitio web cuenta con un certificado SSL (Secure Socket Layer) que garantiza que los datos personales recogidos de usuarios se transmiten de forma segura y confidencial:
+</p>
+</div>
+</div>
+
+
+
+<app-child name="fromchild"  [(ngModel)]="data"  [userForm]="userForm"  (click)="PassEvent()"   ></app-child>
+
+
+

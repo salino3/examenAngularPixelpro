@@ -1,0 +1,68 @@
+#div{
+    margin-top:5em;
+    margin: 2em;
+    text-align:center;
+     margin: auto;
+
+}
+
+span{
+   text-decoration: underline;
+   
+}
+
+#hblue{
+   background-color:blue;
+    color: white;
+}
+  h1 {
+  margin: 1em;
+   background-color:blue;
+    color: white;
+ 
+}
+#firstId{
+    margin-top: 1em;
+    
+}
+.container {
+  padding: 2.5em;
+  margin-bottom: 3em;
+  text-align: left;
+  border: solid 1px black;
+ 
+}
+
+.btn-light{
+  border: solid 1px black;
+  background-color: lightblue
+}
+.btn-light:hover{
+    border: solid 1px black;
+  background-color: lightblue
+}
+#span{
+  text-decoration: underline ;
+   font-weight: bold;
+}
+.text1{
+  text-align: center;
+  margin: 0.5em;
+}
+.text2, .text4{
+  text-align: left;
+}
+.text3{
+  text-align: left;
+  margin:1em;
+  margin-left: 0;
+}
+li{
+  margin: 1em;
+}
+.text5{
+  margin-top: 1em;
+  text-align: left;
+ 
+}
+

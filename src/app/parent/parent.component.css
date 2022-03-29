@@ -1,0 +1,62 @@
+.form-control.ng-touched.ng-invalid {
+ border:2px solid red;
+
+}
+.form-control.ng-touched.ng-valid {
+ border:2px solid green;
+}
+
+
+
+#divmayor{
+width: 50em;
+ margin: auto;
+ margin-bottom: 2em;
+ border: solid 1px black;
+}
+.div1{
+align-items: center;
+}
+
+#idcolor{
+  color: blue;
+ display: inline;
+
+}
+h5{
+  background-color: blue;
+    color:white;
+      text-align: center;
+
+}
+.checkboxdiv{
+  margin: 1em;
+  padding: 1em;
+  border: solid 1px black;
+  background-color: rgba(128, 128, 128, 0.281);
+}
+.input{
+  width:25em;
+}
+.parrafo{
+color:blue;
+margin-top:2em;
+
+}
+.p{
+  padding: 2em;
+}
+
+button{
+  border-radius:10px;
+  margin: 1em;
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
