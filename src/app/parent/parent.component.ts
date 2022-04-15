@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter, Inject } from '@angular/core';
 import { FormControl, Validators, FormsModule } from '@angular/forms';
 import { FormGroup, FormBuilder } from '@angular/forms';
-import { ValidateUrl } from '../validators/url.validators';
+import { ValidateUrl, Validateweb } from '../validators/url.validators';
 
 
 @Component({
@@ -18,9 +18,11 @@ export class ParentComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder) {}
 
+
+
   ngOnInit(): void {
     this.userForm = this.formBuilder.group({
-      url: ['', Validators.required],
+      url: ['', [Validators.required, Validateweb]],
       url2: ['', Validators.required],
       checkbox: ['', Validators.required],
       nombre: ['', Validators.required],
