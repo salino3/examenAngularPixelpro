@@ -12,7 +12,6 @@ import { ValidateUrl, Validateweb } from '../validators/url.validators';
 export class ParentComponent implements OnInit {
   @Output() passedEvent = new EventEmitter();
   data: any = '';
-  post: any = '';
 
   userForm!: FormGroup;
 
@@ -40,12 +39,9 @@ export class ParentComponent implements OnInit {
     this.click = !this.click;
   }
 
-  AddPost(post: any) {
-    this.click = !this.click;
-  }
+ 
 
   PassEvent() {
-    this.passedEvent.emit(this.post);
     this.passedEvent.emit(this.data);
     this.passedEvent.emit(this.userForm.value);
   }
