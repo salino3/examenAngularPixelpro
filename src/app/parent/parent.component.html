@@ -2,7 +2,7 @@
 <div id="divmayor" class="form-group" >
            <h5>Indtroduzca sus datos:</h5>
 
-  <form class="container " [formGroup]="userForm"  (ngSubmit)="onSubmit2(userForm.value)" novalidate >
+  <form class="container " [formGroup]="userForm"  (ngSubmit)="onSubmit(userForm.value)" novalidate >
   <div class="dvi1">
     
 
@@ -17,7 +17,7 @@
   </div>
     <div class="checkboxdiv inRad form-group" >
   <label id="idcolor" for="">El responsable del fichero de datos personales recogidos de usuarios es:</label>
-   <input name="checkbox" class="form-check-input inRadRound form-control" type="radio" id="gridCheck" value="Una persona fisica" formControlName="checkbox"  >  Una persona fisica  <br/> 
+   <input name="checkbox" class="form-check-input inRadRound form-control" type="radio" id="gridCheck" value="Una persona fisica" formControlName="checkbox"  />  Una persona fisica  <br/> 
       <input name="checkbox" class="form-check-input inRadRound form-control" type="radio" id="gridCheck2" value="Una persona jurídica (ej. sociedad, asociación)" formControlName="checkbox">Una persona jurídica (ej. sociedad, asociación)
   </div>
    <div class="form-group col-md-4 inRad">
@@ -49,9 +49,8 @@
       <input type="email" name="email" class="form-control input" formControlName="email" placeholder="Ej. contacto@pixelpro.es"   >
     </div>
     
-<p class="parrafo">Rellenar todos los campos requeridos</p>
 
-  <button [disabled]="click" class="btn-warnig btn-primary" [disabled]="!userForm.valid" type="submit" (click)="onSubmit2(data)"    >guardar datos</button>
+  <!--<input hidden="true" title="inputHidden"   class="btn-warnig btn-primary" [disabled]="!userForm.valid" type="text"    > -->
  </div>
 </form>
 
@@ -73,7 +72,7 @@ Marque la casilla si el sitio web cuenta con un certificado SSL (Secure Socket L
 
 
 
-<app-child name="fromchild"  [(ngModel)]="data"  [userForm]="userForm"  (click)="PassEvent()"   ></app-child>
+<app-child name="fromchild"  [(ngModel)]="data"  [userForm]="userForm"  (click)="passEvent()"></app-child>
 
 
 

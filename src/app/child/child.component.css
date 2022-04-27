@@ -1,9 +1,9 @@
-#div{
+#politicaPrivacidad{
     margin-top:5em;
     margin: 2em;
     text-align:center;
      margin: auto;
-
+     
 }
 
 span{
@@ -64,5 +64,22 @@ li{
   margin-top: 1em;
   text-align: left;
  
+}
+.parrafo {
+  color: blue;
+  margin-top: 2em;
+  margin: 1em;
+  text-align:center;
+}
+#divChild{
+   margin:1em;
+    display: flex;
+    justify-content: center;
+    
+}
+#buttonChild{
+  width: 90px;
+  height: 40px;
+    white-space: pre;
 }
 

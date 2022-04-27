@@ -32,19 +32,15 @@ export class ParentComponent implements OnInit {
       email: ['', [Validators.required, ValidateUrl]],
     });
   }
-  click: boolean = false;
 
-  onSubmit2(data: any) {
+  onSubmit(data: any) {
     console.log(data);
-    this.click = !this.click;
+    
   }
 
- 
-
-  PassEvent() {
+  passEvent() {
     this.passedEvent.emit(this.data);
     this.passedEvent.emit(this.userForm.value);
   }
 
-  isDisplay = false;
 }
