@@ -8,49 +8,48 @@
 
        <div class="dvi1 col-md-6 ">
       <label class="color" for="inputEmail4 form-label">URL o página web:</label>
-       <input type="url" class="form-control" name="url"  formControlName="url"  />
+       <input title="Input formualrio" type="url" class="form-control" name="url"  formControlName="url"  />
   
       </div>
   <div class="dvi1 col-md-6">
       <label class="color" for="inputPassword4">Indique la denomanacion o nombre de uso corriente o más común del sitio web:</label>
-    <input type="url" class="form-control"  name="url2" formControlName="url2"  >
+    <input title="Input formualrio" type="url" class="form-control"  name="url2" formControlName="url2"  >
   </div>
     <div class="checkboxdiv inRad form-group" >
   <label class="color" for="">El responsable del fichero de datos personales recogidos de usuarios es:</label>
-   <input name="checkbox" class="form-check-input inRadRound form-control" type="radio" id="gridCheck" value="Una persona fisica" formControlName="checkbox"  />  Una persona fisica  <br/> 
-      <input name="checkbox" class="form-check-input inRadRound form-control" type="radio" id="gridCheck2" value="Una persona jurídica (ej. sociedad, asociación)" formControlName="checkbox">Una persona jurídica (ej. sociedad, asociación)
+   <input title="Input formualrio" name="checkbox" class="form-check-input inRadRound form-control" type="radio" id="gridCheck" value="Una persona fisica" formControlName="checkbox"  />  Una persona fisica  <br/> 
+      <input title="Input formualrio" name="checkbox" class="form-check-input inRadRound form-control" type="radio" id="gridCheck2" value="Una persona jurídica (ej. sociedad, asociación)" formControlName="checkbox">Una persona jurídica (ej. sociedad, asociación)
   </div>
    <div class="form-group col-md-4 inRad">
     <label for="inputAddress" class="col col-md-4 inRad2 color">Nombre completo del responsable de datos personales recogidos de usuarios:</label>
-    <input type="text" name="nombre-completo" class="form-control col-md-4" id="inputAddress" placeholder="ej. Miguel Torre" formControlName="nombre">
+    <input title="Input formualrio" type="text" name="nombre-completo" class="form-control col-md-4" id="inputAddress" placeholder="ej. Miguel Torre" formControlName="nombre">
   </div>
 
 <div class="form-group col-md-4 inRad">
     <label class="color"  for="inputAddress2" >NIF (DNI o NIE) del responsable del fichero de datos personales recogidos de usuarios:</label>
-    <input type="text" class="form-control col-md-6" name="documento" id="inputAddress2" placeholder="Ej. Y56.." formControlName="documento">
+    <input title="Input formualrio" type="text" class="form-control col-md-6" name="documento" id="inputAddress2" placeholder="Ej. Y56.." formControlName="documento">
   </div>
  <div class="form-group col-md-6 inRad">
       <label class="color" for="inputCity" text-left>Dirección completa de/los responsable(s) del fichero de datos personales recogidosde usuarios: </label>
-      <input type="text" name="address" class="form-control" id="inputCity" placeholder="Ej. C/.. Codigo postal.." formControlName="address">
+      <input title="Input formualrio" type="text" name="address" class="form-control" id="inputCity" placeholder="Ej. C/.. Codigo postal.." formControlName="address">
     </div>
 
      <div  class="form-group col-md-6 inRad">
       <label class="color" placeholder="Ej. 934782457" for="numerotelefono">Número(s) de telefono del/los responsables(s) del fichero de datos personales recogidos de usuarios:</label>
-      <input type="number" name="tel" class="form-control" formControlName="tel" placeholder="Ej. 934782457">
+      <input title="Input formualrio" type="number" name="tel" class="form-control" formControlName="tel" placeholder="Ej. 934782457">
     </div>
 
      <div   class="form-group col-md-2 inRad color" >
       <label for="inputZip">(Opcional) Número de fax del/los responsable(s) del fichero de datos personales recogidos de usuarios:</label>
-      <input type="number" name="fax" class="form-control" placeholder="Ej. 910000000" id="inputZip" formControlName="numfax" >
+      <input title="Input formualrio" type="number" name="fax" class="form-control" placeholder="Ej. 910000000" id="inputZip" formControlName="numfax" >
     </div>
 
    <div   class="form-group col-md-2 inRad color">
       <label for="inputZip" id="idcolor">Correo electrónico de contacto del/los responsable(s) del fichero de datos personales recogidos de usuarios:</label>
-      <input type="email" name="email" class="form-control input" formControlName="email" placeholder="Ej. contacto@pixelpro.es"   >
+      <input title="Input formualrio" type="email" name="email" class="form-control input" formControlName="email" placeholder="Ej. contacto@pixelpro.es"   >
     </div>
     
 
-  <!--<input hidden="true" title="inputHidden"   class="btn-warnig btn-primary" [disabled]="!userForm.valid" type="text"    > -->
  </div>
 </form>
 
@@ -73,6 +72,4 @@ Marque la casilla si el sitio web cuenta con un certificado SSL (Secure Socket L
 
 
 <app-child name="fromchild"  [(ngModel)]="data"  [userForm]="userForm"  (click)="passEvent()"></app-child>
-
-
 

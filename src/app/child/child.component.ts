@@ -30,10 +30,10 @@ export class ChildComponent implements OnInit {
     var range = document.createRange();
     const politicaPrivacidad = document.getElementById('politicaPrivacidad');
     range.selectNode(politicaPrivacidad as Node);
-    window.getSelection().removeAllRanges(); // clear current selection
-    window.getSelection().addRange(range); // to select text
+    window.getSelection()!.removeAllRanges(); // clear current selection
+    window.getSelection()!.addRange(range); // to select text
     document.execCommand('copy');
-    window.getSelection().removeAllRanges(); // to deselect
+    window.getSelection()!.removeAllRanges(); // to deselect
 
     this.click = !this.click;
   }
