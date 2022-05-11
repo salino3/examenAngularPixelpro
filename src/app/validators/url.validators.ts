@@ -3,7 +3,7 @@ import { AbstractControl } from '@angular/forms';
 
 export function Validateweb(control: AbstractControl) {
   if (
-    !control.value.includes('www.') ||
+   
     !control.value.startsWith('https') ||
     (!control.value.includes('.com') && !control.value.includes('.es')) ||
     control.value.includes('muyoc.com') 
